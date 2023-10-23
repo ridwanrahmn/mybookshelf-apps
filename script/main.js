@@ -90,10 +90,10 @@ function makeBook(bookObject) {
   bookTitle.innerText = bookObject.title;
 
   const bookAuthor = document.createElement("p");
-  bookAuthor.innerText = `Penulis: ${bookObject.author}`;
+  bookAuthor.innerText = `Author: ${bookObject.author}`;
 
   const bookYear = document.createElement("p");
-  bookYear.innerText = `Tahun: ${bookObject.year}`;
+  bookYear.innerText = `Year: ${bookObject.year}`;
 
   const buttonContainer = document.createElement("div");
   buttonContainer.classList.add("action");
@@ -106,7 +106,7 @@ function makeBook(bookObject) {
   if (!bookObject.isComplete) {
     const doneButton = document.createElement("button");
     doneButton.classList.add("green");
-    doneButton.textContent = "Selesai dibaca";
+    doneButton.textContent = "Finished Reading";
 
     doneButton.addEventListener("click", function () {
       addTaskCompleted(bookObject.id);
@@ -114,7 +114,7 @@ function makeBook(bookObject) {
 
     const trashButton = document.createElement("button");
     trashButton.classList.add("red");
-    trashButton.textContent = "Hapus buku";
+    trashButton.textContent = "Delete Book";
 
     trashButton.addEventListener("click", function () {
       removeTaskModalWindow(bookObject);
@@ -124,7 +124,7 @@ function makeBook(bookObject) {
   } else {
     const undoButton = document.createElement("button");
     undoButton.classList.add("green");
-    undoButton.textContent = "Belum selesai dibaca";
+    undoButton.textContent = "Unfinished Reading";
 
     undoButton.addEventListener("click", function () {
       undoTaskCompleted(bookObject.id);
@@ -132,7 +132,7 @@ function makeBook(bookObject) {
 
     const trashButton = document.createElement("button");
     trashButton.classList.add("red");
-    trashButton.textContent = "Hapus buku";
+    trashButton.textContent = "Delete Book";
 
     trashButton.addEventListener("click", function () {
       removeTaskModalWindow(bookObject);

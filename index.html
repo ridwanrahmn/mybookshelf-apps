@@ -12,54 +12,54 @@
     </header>
     <main>
       <section class="input-section">
-        <h2>Masukkan Buku Baru</h2>
+        <h2>Input New Book</h2>
         <form id="inputBook">
           <div class="input">
-            <label for="inputBookTitle">Judul</label>
+            <label for="inputBookTitle">Title</label>
             <input id="inputBookTitle" type="text" required />
           </div>
           <div class="input">
-            <label for="inputBookAuthor">Penulis</label>
+            <label for="inputBookAuthor">Author</label>
             <input id="inputBookAuthor" type="text" required />
           </div>
           <div class="input">
-            <label for="inputBookYear">Tahun</label>
+            <label for="inputBookYear">Year</label>
             <input id="inputBookYear" type="number" required />
           </div>
           <div class="input-check">
-            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <label for="inputBookIsComplete">Finished Reading</label>
             <input id="inputBookIsComplete" type="checkbox" value="true" />
           </div>
-          <button id="bookSubmit" type="submit">Masukkan Buku</button>
+          <button id="bookSubmit" type="submit">Submit Book</button>
         </form>
       </section>
 
       <section class="search-section">
-        <h2>Cari Buku</h2>
+        <h2>Search Book</h2>
         <form id="searchBook">
           <input
             id="searchBookTitle"
             type="text"
-            placeholder="Cari di sini ..."
+            placeholder="Search here ..."
           />
         </form>
       </section>
 
       <section class="book-shelf">
-        <h2>Belum Selesai Dibaca</h2>
+        <h2>Unfinished Reading</h2>
         <div id="incompleteBookShelfList" class="book-list"></div>
       </section>
 
       <section class="book-shelf">
-        <h2>Selesai Dibaca</h2>
+        <h2>Finished Reading</h2>
         <div id="completeBookShelfList" class="book-list"></div>
       </section>
 
       <section class="modal-section hidden">
-        <p>Anda yakin untuk menghapus bagian ini?</p>
+        <p>Are you sure want delete this item?</p>
         <div class="button-modal">
-          <button id="buttonYes">Ya</button>
-          <button id="buttonNo">Tidak</button>
+          <button id="buttonYes">Yes</button>
+          <button id="buttonNo">No</button>
         </div>
       </section>
       <div class="overlay hidden"></div>
